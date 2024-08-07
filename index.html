@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Design</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            position: relative; /* Add position relative to body */
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        h1 {
+            font-size: 24px;
+            color: #007BFF;
+            margin-bottom: 10px;
+        }
+        .subheader {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section-title {
+            font-size: 18px;
+            color: #333;
+            border-bottom: 2px solid #007BFF;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+        .info {
+            background-color: #f9f9f9;
+            border-left: 4px solid #007BFF;
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+        .buy-button, .show-qr-button, .amount-button, .crypto-button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .buy-button {
+            background-color: #28a745;
+        }
+        .buy-button:hover {
+            background-color: #218838;
+        }
+        .show-qr-button {
+            background-color: #007BFF;
+        }
+        .show-qr-button:hover {
+            background-color: #0056b3;
+        }
+        .amount-button {
+            background-color: #6c757d;
+        }
+        .amount-button:hover {
+            background-color: #5a6268;
+        }
+        .crypto-button {
+            background-color: #343a40;
+        }
+        .crypto-button:hover {
+            background-color: #23272b;
+        }
+        .amount-buttons, .crypto-buttons {
+            margin-top: 20px;
+        }
+        /* Popup styles */
+        .popup {
+            display: none;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+        }
+        .popup-content {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            position: relative;
+        }
+        .popup-content img {
+            max-width: 100%;
+            max-height: 300px;
+            border-radius: 8px;
+        }
+        .close-popup {
+            display: inline-block;
+            padding: 5px 10px;
+            font-size: 14px;
+            color: #fff;
+            background: #dc3545;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .close-popup:hover {
+            background: #c82333;
+        }
+        /* Feng Shui Coin image */
+        .fengshui-image {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            width: 100px; /* Adjust width as needed */
+            height: auto;
+        }
+        /* Running text styles */
+        .running-text-container {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 300px; /* Adjust width as needed */
+            overflow: hidden;
+            white-space: nowrap;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+        .running-text {
+            display: inline-block;
+            font-size: 18px;
+            color: #007BFF;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            animation: runText 10s linear infinite, textBgColor 3s linear infinite;
+        }
+        @keyframes runText {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+        @keyframes textBgColor {
+            0% { background-color: #fff; }
+            25% { background-color: #f8d7da; }
+            50% { background-color: #d4edda; }
+            75% { background-color: #d1ecf1; }
+            100% { background-color: #fff; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>MetaWave Solutions</h1>
+        <div class="running-text-container">
+            <div class="running-text">Thanks You For Purchasing Accounts. Wish You Get KK from Earning Facebook.</div>
+        </div>
+        <div class="subheader">Facebook Account Store</div>
+        <div class="section">
+            <div class="section-title">Account Information (IP India)</div>
+            <p class="info">Facebook Accounts are registered and verified by email and IP addresses. The Name is American Name. There is no different email in the set. Sex can be both male and female. Cookies are included.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Pricing</div>
+            <p><span class="highlight">Price per Account:</span> <span class="price">$0.08</span></p>
+            <p><span class="highlight">Price per Account (Bulk 1000+):</span> <span class="price">$0.06</span></p>
+            
+        </div>
+        <div class="section">
+            <div class="section-title">Additional Details</div>
+            <p>FB Accounts | Verified by email (email included). 2FA Included.  Age 5-10 Days. Can be male or female. Partially filled profiles. Registered from India.</p>
+        </div>
+    
+        <div class="section">
+            <div class="section-title">Account Information (IP Cambodia)</div>
+            <p class="info">Facebook Accounts are registered and verified by email and IP addresses. The Name is American Name. There is no different email in the set. Sex can be both male and female. Cookies are included.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Pricing</div>
+            <p><span class="highlight">Price per Account:</span> <span class="price">$0.10</span></p>
+            <p><span class="highlight">Price per Account (Bulk 1000+):</span> <span class="price">$0.05</span></p>
+            
+        </div>
+        <div class="section">
+            <div class="section-title">Additional Details</div>
+            <p>FB Accounts | Verified by email (email included). 2FA Included.  Age 5-10 Days. Can be male or female. Partially filled profiles. Registered from Cambodia.</p>
+        </div>    
+        <a href="https://t.me/@hengsokpanhasun" class="buy-button" target="_blank">Buy Now</a>
+        <button class="show-qr-button" onclick="toggleButtons()">Show KHQR (ABA)</button>
+        <div id="amount-buttons" class="amount-buttons" style="display: none;">
+            <button class="amount-button" onclick="showPopup('10')">$10</button>
+            <button class="amount-button" onclick="showPopup('20')">$20</button>
+            <button class="amount-button" onclick="showPopup('30')">$30</button>
+            <button class="amount-button" onclick="showPopup('40')">$40</button>
+            <button class="amount-button" onclick="showPopup('50')">$50</button>
+            <button class="amount-button" onclick="showPopup('60')">$60</button>
+            <button class="amount-button" onclick="showPopup('70')">$70</button>
+            <button class="amount-button" onclick="showPopup('80')">$80</button>
+            <button class="amount-button" onclick="showPopup('100')">$100</button>
+        </div>
+        <button class="show-qr-button" onclick="toggleCryptoButtons()">CryptoCurrency (QR Code)</button>
+        <div id="crypto-buttons" class="crypto-buttons" style="display: none;">
+            <button class="crypto-button" onclick="showPopup('usdt')">USDT</button>
+            <button class="crypto-button" onclick="showPopup('btc')">Bitcoin</button>
+            <button class="crypto-button" onclick="showPopup('eth')">Ethereum</button>
+            <button class="crypto-button" onclick="showPopup('bnb')">BNB</button>
+            <button class="crypto-button" onclick="showPopup('ltc')">Litecoin</button>
+            <button class="crypto-button" onclick="showPopup('doge')">Dogecoin</button>
+            <button class="crypto-button" onclick="showPopup('shib')">Shiba Inu</button>
+        </div>
+    </div>
+
+    <!-- Popup -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <img id="popup-image" src="" alt="QR Code">
+            <button class="close-popup" onclick="closePopup()">Close</button>
+        </div>
+    </div>
+
+    <img src="fengshuicoin.png" alt="Feng Shui Coin" class="fengshui-image">
+
+    <script>
+        function toggleButtons() {
+            var buttons = document.getElementById('amount-buttons');
+            buttons.style.display = buttons.style.display === 'none' ? 'block' : 'none';
+        }
+
+        function toggleCryptoButtons() {
+            var buttons = document.getElementById('crypto-buttons');
+            buttons.style.display = buttons.style.display === 'none' ? 'block' : 'none';
+        }
+
+        function showPopup(type) {
+            var image = document.getElementById('popup-image');
+            image.src = type + '.png';  // Set the image source based on the type clicked
+            var popup = document.getElementById('popup');
+            popup.style.display = 'flex'; // Show the popup
+        }
+
+        function closePopup() {
+            var popup = document.getElementById('popup');
+            popup.style.display = 'none'; // Hide the popup
+        }
+
+        function changeBgColor() {
+            const colors = ['#f8d7da', '#d4edda', '#d1ecf1', '#fff'];
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            document.querySelector('.running-text').style.backgroundColor = randomColor;
+        }
+
+        setInterval(changeBgColor, 3000); // Change background color every 3 seconds
+    </script>
+</body>
+</html>

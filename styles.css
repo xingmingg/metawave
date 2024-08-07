@@ -1,0 +1,107 @@
+/* Container and Flexbox Layout */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Section Title and Sorting */
+.soc-bl {
+    margin-bottom: 20px;
+}
+
+.soc-title {
+    margin-bottom: 10px;
+}
+
+.soc-name a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.soc-name a:hover {
+    text-decoration: underline;
+}
+
+.catalog-th {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.sort-btn {
+    cursor: pointer;
+    margin-left: 10px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+/* Item Layout */
+.socs {
+    display: flex;
+    flex-direction: column;
+}
+
+.soc-body {
+    display: flex;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.soc-img {
+    margin-right: 10px;
+}
+
+.soc-img img {
+    max-width: 100px;
+    height: auto;
+}
+
+.soc-text {
+    flex: 1;
+}
+
+.learn-more {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.learn-more:hover {
+    text-decoration: underline;
+}
+
+.soc-price {
+    margin: 10px 0;
+}
+
+.price {
+    font-weight: bold;
+}
+
+.button-wrap {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.subscribe_button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.subscribe_button img {
+    display: block;
+}
